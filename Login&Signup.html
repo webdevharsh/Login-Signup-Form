@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+        <link rel="stylesheet" href="Login&Signup.css">
+        <title></title>
+</head>
+
+<body>
+<div class="container">
+  <div class="signup-box">
+   <h3 class="signup-title">Create <br> An Account</h3>  
+   <div class="signup-other-signups">
+      <div class="signup-google">
+        <i class="fa-brands fa-google"></i>      
+      </div>   
+      <div class="signup-facebook">
+        <i class="fa-brands fa-facebook-f"></i>      
+      </div>
+   </div>
+   <div class="or-line"></div>
+   <div class="signup-inputs">
+     <input type="text" placeholder="Username" id="signup-username">   
+      <input type="email" placeholder="Email" id="signup-email"> 
+      <input type="password" placeholder="Password" id="signup-password"> 
+      <i class="fa-solid fa-eye eye" onclick="signupPassToggle()"></i>
+      <i class="fa-solid fa-eye-slash eye" onclick="signupPassToggle()"></i>
+   </div>
+   <button class="signup-btn">Sign Up</button>
+   <p class="alr-acc-txt">Already have account? <span onclick="loginBoxShow()">Login</span></p>
+  </div>    
+   <div class="login-box">
+   <h3 class="login-title">Welcome <br> Back</h3>  
+   <div class="login-other-logins">
+      <div class="login-google">
+        <i class="fa-brands fa-google"></i>      
+      </div>   
+      <div class="login-facebook">
+        <i class="fa-brands fa-facebook-f"></i>      
+      </div>
+   </div>
+   <div class="login-or-line"></div>
+   <div class="login-inputs">
+     <input type="text" placeholder="Username" id="login-username">   
+      <input type="password" placeholder="Password" id="login-password"> 
+   </div>
+   <button class="login-btn">Login</button>
+   <p class="frgt-pass-txt">Forgot your password? </p>
+   <p class="dnt-acc">Don't have an account? <span onclick="createAccount()">Create one</span></p>
+  </div>    
+</div>
+<script src="Login&Signup.js"></script>
+</body>
+
+</html>
