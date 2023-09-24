@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}    
+
+body{
+background:#6008C3;
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:30px;  
+width:350px;
+background:#070610;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+transition:all .2s;
+}
+
+.container .signup-box,.container .login-box{
+padding:2px;   
+color:white;
+font-weight:500;
+}
+
+.container .login-box{
+display:none;        
+}
+
+.container .signup-box .signup-title,.container .login-box .login-title{
+font-size:20px; 
+font-weight:600;
+}
+
+.container .signup-other-signups,.container .login-other-logins{
+margin-top:40px;       
+}
+
+.container .signup-other-signups div,.container .login-other-logins div{
+height:40px;
+width:40px;
+background:#6008C3;
+border-radius:100%;
+color:#070610;
+display:flex;
+align-items:center;
+justify-content:center;
+float:left;
+margin-left:16px;
+font-size:20px;
+position:relative;
+left:80px;
+cursor:pointer;
+}
+
+.container .signup-box .or-line,.container .login-box .login-or-line{
+height:.3px;  
+width:100%;
+background:rgba(105, 105, 105,0.4);
+margin-top:108px;
+}
+
+.container .signup-box .or-line::before,.container .login-box .login-or-line::before{
+content:"or";
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+background:#070610;
+padding:3px;
+font-size:16px;
+font-weight:300;
+color:grey;
+}
+
+.container .signup-box .signup-inputs,.container .login-box .login-inputs{
+margin-top:20px;        
+}
+
+.container .signup-box .signup-inputs input,.container .login-box .login-inputs input{
+all:unset;  
+height:25px;
+width:90%;
+padding:15px;
+background:#121115;
+margin-top:20px;
+border-radius:8px;
+}
+
+.container .signup-box .signup-inputs #signup-password,.container .login-box .login-inputs #login-password{
+padding-right:40px; 
+width:81%;
+}
+
+.container .signup-box .signup-inputs .eye{
+position:absolute;   
+right:50px;
+margin-top:-35px;
+color:grey;
+cursor:pointer;
+}
+
+.container .signup-box .signup-inputs .fa-eye-slash{
+display:none;       
+}
+
+.container .signup-box .signup-btn,.container .login-box .login-btn{
+all:unset;       
+height:45px;   
+width:100%;
+border-radius:30px;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(#E4FD02,#3BC707);
+margin-top:25px;
+cursor:pointer;
+}
+
+.container .signup-box .alr-acc-txt,.container .login-box .frgt-pass-txt{
+text-align:center;   
+font-size:11px;
+color:grey;
+margin-top:8px;
+cursor:pointer;
+}
+
+.container .login-box .frgt-pass-txt{
+margin-top:15px;
+cursor:pointer;
+}
+
+.container .signup-box .alr-acc-txt span{
+color:white;  
+text-decoration:underline;
+cursor:pointer;
+}
+
+.container .login-box .dnt-acc{
+text-align:center;   
+font-size:11px;
+color:grey;
+margin-top:5px;
+}
+
+.container .login-box .dnt-acc span{
+color:white;        
+cursor:pointer;
+}
+
+::selection{
+color:black;        
+background:#6008C3;
+}
